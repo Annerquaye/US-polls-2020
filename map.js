@@ -127,9 +127,9 @@ map.on("click", "us_states_elections", function (e) {
     var winner = e.features[0].properties.Winner;
     var imagePath;
     if (winner == "Donald J Trump") {
-      imagePath = "trump.png";
+      imagePath = "./img/trump.png";
     } else {
-      imagePath = "biden.jpeg";
+      imagePath = "./img/biden.jpeg";
     }
     var wnrPerc = e.features[0].properties.WnrPerc;
     var totalVotes = e.features[0].properties.Total;
